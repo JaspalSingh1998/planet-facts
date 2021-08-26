@@ -28,5 +28,113 @@
 }
 body {
   font-size: var(--ff-base-size);
-  font-family: var(--ff-spartan);
+  font-family: var(--ff-antonio);
+  min-height: 100vh;
+  background-color: var(--color-black);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid var(--color-dark-grey);
+}
+.logo {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    left: 0;
+    bottom: -2rem;
+    opacity: 0;
+    visibility: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .active.mercury::after,
+  .mercury:hover::after {
+    background-color: var(--color-mercury);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.venus::after,
+  .venus:hover::after {
+    background-color: var(--color-venus);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.earth::after,
+  .earth:hover::after {
+    background-color: var(--color-earth);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.mars::after,
+  .mars:hover::after {
+    background-color: var(--color-mars);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.jupiter::after,
+  .jupiter:hover::after {
+    background-color: var(--color-jupiter);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.saturn::after,
+  .saturn:hover::after {
+    background-color: var(--color-saturn);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.uranus::after,
+  .uranus:hover::after {
+    background-color: var(--color-uranus);
+    opacity: 1;
+    visibility: visible;
+  }
+  .active.neptune::after,
+  .neptune:hover::after {
+    background-color: var(--color-neptune);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    flex-direction: row;
+  }
+  .nav-link::after {
+    bottom: -2.5rem;
+  }
 }
