@@ -14,11 +14,7 @@ function handleOptionToggle(event, i) {
 }
 
 function handlePlanetImages(i) {
-  images.forEach((img) => {
-    if (img.classList.contains("img-show")) {
-      img.classList.remove("img-show");
-    }
-  });
+  document.querySelector(".img-show").classList.remove("img-show");
 
   images[i].classList.add("img-show");
   if (i === 2) {
@@ -29,10 +25,8 @@ function handlePlanetImages(i) {
 }
 
 function handlePlanetDescription(i) {
-  descriptions.forEach((description) => {
-    if (description.classList.contains("show-description")) {
-      description.classList.remove("show-description");
-    }
-  });
+  document
+    .querySelector(".show-description")
+    .classList.remove("show-description");
   descriptions[i].classList.add("show-description");
 }
