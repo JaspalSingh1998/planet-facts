@@ -95,9 +95,23 @@ main {
 }
 main img {
   max-width: 14rem;
+  display: none;
+}
+.img-show {
+  display: initial;
 }
 .planet__images {
   text-align: center;
+}
+.surface {
+  position: relative;
+}
+.surface-geology {
+  position: absolute;
+  width: 6rem;
+  left: 50%;
+  bottom: -3rem;
+  transform: translateX(-50%);
 }
 .planet__info {
   text-align: center;
