@@ -128,6 +128,10 @@ main img {
   font-size: 0.75rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  display: none;
+}
+.show-description {
+  display: block;
 }
 .planet-link {
   color: var(--color-light-grey);
@@ -135,6 +139,9 @@ main img {
 .source-link {
   color: var(--color-light-grey);
   font-weight: bold;
+}
+.source-icon {
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .menu-open {
