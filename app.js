@@ -2,7 +2,13 @@ const options = document.querySelectorAll(".option");
 const images = document.querySelectorAll(".planet_img");
 const descriptions = document.querySelectorAll(".description");
 
+const tabOptions = document.querySelectorAll(".tab-option");
+
 options.forEach((option, i) => {
+  option.addEventListener("click", () => handleOptionToggle(event, i), false);
+});
+
+tabOptions.forEach((option, i) => {
   option.addEventListener("click", () => handleOptionToggle(event, i), false);
 });
 
