@@ -148,7 +148,10 @@ main img {
 }
 @media screen and (min-width: 768px) {
   main img {
-    max-width: 18rem;
+    max-width: 20rem;
+  }
+  .planet_img {
+    width: 100%;
   }
   .menu-open {
     display: none;
@@ -270,5 +273,29 @@ main img {
   }
   .nav-link::after {
     bottom: -2.5rem;
+  }
+  main img {
+    max-width: 28rem;
+  }
+  .planet_img {
+    width: 100%;
+  }
+  .planet__info {
+    flex-direction: column;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .description {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .tab-option {
+    width: 70%;
+  }
+  .planet__info {
+    gap: 4rem;
   }
 }
