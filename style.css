@@ -146,6 +146,31 @@ main img {
 .tab-options {
   display: none;
 }
+/* Facts */
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.fact {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--color-light-grey);
+  padding: 1rem;
+}
+.fact__title {
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+.fact__data {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
 @media screen and (min-width: 768px) {
   main img {
     max-width: 20rem;
@@ -265,6 +290,26 @@ main img {
   .mercury.tab-active {
     background-color: var(--color-mercury);
   }
+  .facts {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .fact {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 10rem;
+    width: 100%;
+  }
+  .fact__title {
+    font-size: 0.875rem;
+  }
+  .fact__data {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -297,5 +342,12 @@ main img {
   }
   .planet__info {
     gap: 4rem;
+  }
+  .facts {
+    gap: 5rem;
+  }
+  .fact {
+    max-width: 15rem;
+    width: 100%;
   }
 }
