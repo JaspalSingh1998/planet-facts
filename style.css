@@ -33,6 +33,7 @@ body {
   background: url("./assets/background-stars.svg") no-repeat, var(--color-black);
 }
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +49,33 @@ body {
 }
 .nav {
   display: none;
+}
+.mobile-menu {
+  position: absolute;
+  z-index: 10;
+  min-height: 100vh;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 2rem;
+  background: var(--color-black);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.mobile-menu.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: unset;
 }
 .options {
   padding: 1rem 2rem;
@@ -184,6 +212,9 @@ main img {
   .header {
     flex-direction: column;
     gap: 2rem;
+  }
+  .mobile-menu {
+    display: none;
   }
   .nav {
     display: flex;
