@@ -287,8 +287,29 @@ main img {
     background: transparent;
     border: 1px solid var(--color-light-grey);
   }
-  .mercury.tab-active {
+  .mercury.option-active {
     background-color: var(--color-mercury);
+  }
+  .venus.option-active {
+    background-color: var(--color-venus);
+  }
+  .earth.option-active {
+    background-color: var(--color-earth);
+  }
+  .mars.option-active {
+    background-color: var(--color-mars);
+  }
+  .jupiter.option-active {
+    background-color: var(--color-jupiter);
+  }
+  .saturn.option-active {
+    background-color: var(--color-saturn);
+  }
+  .uranus.option-active {
+    background-color: var(--color-uranus);
+  }
+  .neptune.option-active {
+    background-color: var(--color-neptune);
   }
   .facts {
     flex-direction: row;
