@@ -12,6 +12,10 @@ tabOptions.forEach((option, i) => {
   option.addEventListener("click", () => handleOptionToggle(event, i), false);
 });
 
+tabOptions.forEach((option, i) => {
+  option.addEventListener("click", () => handleTabOptions(i), false);
+});
+
 function handleOptionToggle(event, i) {
   document.querySelector(".option-active").classList.remove("option-active");
   event.target.classList.add("option-active");
@@ -35,4 +39,9 @@ function handlePlanetDescription(i) {
     .querySelector(".show-description")
     .classList.remove("show-description");
   descriptions[i].classList.add("show-description");
+}
+
+function handleTabOptions(i) {
+  document.querySelector(".tab-active").classList.remove("tab-active");
+  tabOptions[i].classList.add("tab-active");
 }

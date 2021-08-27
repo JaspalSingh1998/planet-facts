@@ -248,6 +248,19 @@ main img {
   }
   .tab-option {
     display: block;
+    padding: 1rem 2rem;
+    color: var(--color-white);
+    font-family: inherit;
+    width: 100%;
+    text-align: left;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--color-light-grey);
+  }
+  .mercury.tab-active {
+    background-color: var(--color-mercury);
   }
 }
 
